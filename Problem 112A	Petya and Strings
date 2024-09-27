@@ -1,0 +1,44 @@
+#include <conio.h>
+#include <iostream>
+#include <string.h>
+#include <bits/stdc++.h>
+#include <cctype>
+
+
+using namespace std;
+
+int main(){
+
+    string str1,str2;
+    int i,sum=0,sum1=0,flag=0;
+    cin>>str1;
+    cin>>str2;
+
+    for(i=0;i<str1.size();i++){
+        if(str1[i]<97){
+            str1[i]=tolower(str1[i]);
+        }
+        else if(str1[i]>=97){
+            str1[i]=str1[i];
+        }
+}
+    for(i=0;i<str2.size();i++){
+        if(str2[i]<97){
+            str2[i]=tolower(str2[i]);
+        }
+        else if(str2[i]>=97){
+            str2[i]=str2[i];
+        }
+    }
+    if(str1<str2){
+        cout<<"-1"<<endl;
+    }
+    else if(str2<str1){
+        cout<<"1"<<endl;
+    }
+    else{
+        cout<<"0"<<endl;
+    }
+
+    return 0;
+}
