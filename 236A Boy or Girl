@@ -1,0 +1,33 @@
+#include <string>
+#include <algorithm>
+#include <iostream>
+#include<cmath>
+#include<cstdio>
+
+using namespace std;
+
+int main() {
+    string str;
+    int i,j, cOunt=0;
+    cin>>str;
+
+    sort(str.begin(),str.end());
+    //cout<<str;
+    for(i=0;i<str.size();i++){
+            if(str[i]!=str[i+1]){
+                cOunt++;
+        }
+        else{
+            continue;
+        }
+    }
+
+    if(cOunt%2!=0){
+        cout<<"IGNORE HIM!"<<endl;
+    }
+    else{
+        cout<<"CHAT WITH HER!"<<endl;
+    }
+
+    return 0;
+}
