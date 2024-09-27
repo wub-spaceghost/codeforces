@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+
+
+using namespace std;
+
+int main() {
+    int a,b,cOunt=0;
+    cin>>a>>b;
+
+    do{
+        a=a*3;
+        b=b*2;
+        cOunt++;
+
+    }while(b>=a);
+
+    if(a>=b){
+        cout<<cOunt<<endl;
+    }
+
+
+    return 0;
+}
